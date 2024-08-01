@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile & Comments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="auth-section">
+        <h2 id="auth-title">Create Account</h2>
+        <input id="email" type="email" placeholder="Email (Gmail)" required>
+        <input id="username" type="text" placeholder="Username (min 4 letters)" required>
+        <input id="password" type="password" placeholder="Password" required>
+        <label><input id="remember-me" type="checkbox"> Remember Me</label>
+        <button id="auth-button">Create Account</button>
+        <p id="auth-switch">Already have an account? <a href="#" onclick="switchAuth()">Login</a></p>
+    </div>
+    <div id="comments-section" style="display:none;">
+        <button id="logout-button" onclick="logout()">Logout</button>
+        <h2>Comments</h2>
+        <input id="comment" type="text" placeholder="Add your comment here...">
+        <button onclick="addComment()">Post Comment</button>
+        <h3>All Comments</h3>
+        <div id="comment-list"></div>
+    </div>
+    <script src="profile.js"></script>
+    <script src="comment.js"></script>
+</body>
+</html>
